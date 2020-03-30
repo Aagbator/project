@@ -1,0 +1,42 @@
+@import "../../../assets/variables";
+
+.card{
+  position: relative;
+  height: 120px;
+  //width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 200px;
+
+  background-color: $primary_color;
+  color: white;
+  padding: 15px 15px 0;
+  border-radius: $container_radius;
+
+  .title{
+    color: rgba(white, .5);
+    margin-bottom: 5px;
+    font-size: .5em;
+  }
+
+  .main-text{
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+
+  .extra{
+    font-size: 16px;
+  }
+
+  .icon{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: fit-content;
+    i{
+      font-family: FontAwesome;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+<div class="card">
+  <div class="main">
+    <div class="title">{{data.main.title}}</div>
+    <div class="main-text">
+      {{data.main.value}}%
+      <div class="progress">
+        <div class="title">{{data.progress.title}}</div>
+        <app-percent-bar [value]="data.main.value"></app-percent-bar>
+      </div>
+    </div>
+
+    <div class="subs">
+      <div>
+        <div class="title">Confirmed</div>
+        <div class="main-text">{{data.confirmed}}<span>FTE</span></div>
+      </div>
+
+      <div>
+        <div class="title">UnConfirmed</div>
+        <div class="main-text">{{data.unconfirmed}} <span>FTE</span></div>
+      </div>
+
+      <div>
+        <div class="title">Duration</div>
+        <div class="main-text">{{data.duration}}<span>FTE</span></div>
+      </div>
+
+      <div class="circles">
+        <div>I <span class="badge">{{data.badge1}}</span></div>
+        <div>R<span class="badge">{{data.badge2}}</span></div>
+      </div>
+    </div>
+
+    <div class="status" [class]="data.status"></div>
+  </div>
+</div>

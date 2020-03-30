@@ -1,0 +1,17 @@
+.card {
+  div{
+    width: 100%;
+  }
+
+  .bar{
+    display: grid;
+    grid-template-columns: 70% 20%;
+    grid-column-gap: 10px;
+    align-items: end;
+
+    span{
+      font-size: .6em;
+    }
+  }
+
+}

@@ -1,0 +1,13 @@
+.card{
+  min-width: 300px;
+  justify-content: space-between;
+  padding-right: 20%;
+  box-sizing: border-box;
+  >.main {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+
+}

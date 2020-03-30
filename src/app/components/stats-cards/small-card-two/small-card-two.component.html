@@ -1,0 +1,17 @@
+<div class="card">
+  <div>
+    <div class="title">{{data.main.title}}</div>
+    <div class="main-text">{{data.main.value}}</div>
+  </div>
+
+  <div class="counter">
+    <div class="title">{{data.sub.title}}</div>
+    <diV class="main-text bar">
+      <app-percent-bar [value]="data.sub.percent"></app-percent-bar>
+      <span>50%</span>
+    </diV>
+  </div>
+
+  <div class="icon">icon</div>
+
+</div>

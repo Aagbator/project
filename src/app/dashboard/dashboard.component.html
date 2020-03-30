@@ -1,0 +1,50 @@
+<section>
+  <app-nav-bar></app-nav-bar>
+  <div class="container">
+    <app-form></app-form>
+  </div>
+  <div class=" container">
+    <section class="stats-overview">
+      <div>
+        <app-small-card-one [data]="card1"></app-small-card-one>
+      </div>
+      <div>
+        <app-small-card-two [data]="card2"></app-small-card-two>
+      </div>
+      <div>
+        <app-small-card-one [data]="card3"></app-small-card-one>
+      </div>
+      <div>
+        <app-small-card-three [data]="card4"></app-small-card-three>
+      </div>
+      <div>
+        <app-small-card-three [data]="card5"></app-small-card-three>
+      </div>
+      <div>
+        <app-small-card-one [data]="card6"></app-small-card-one>
+      </div>
+    </section>
+    <section class="stats-overview">
+      <app-big-card-one [data]="bigCard"></app-big-card-one>
+    </section>
+  </div>
+
+  <div class="main-display">
+    <div class="container sidecards">
+      <div *ngFor="let p of projects">
+      <app-big-card-two [data]="p"></app-big-card-two>
+      </div>
+    </div>
+    <div class="container charts1">
+
+    </div>
+
+    <div class="container charts2">
+
+    </div>
+
+    <div class="container tables">
+
+    </div>
+  </div>
+</section>

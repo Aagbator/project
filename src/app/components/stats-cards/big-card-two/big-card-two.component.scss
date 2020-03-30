@@ -1,0 +1,89 @@
+
+.card{
+  min-width: 300px;
+  .main{
+    width: 100%;
+  }
+
+  .main-text{
+    display: flex;
+    flex-direction: row;
+
+    .progress {
+      margin-left: 20px;
+      width: 180px;
+    }
+  }
+
+  .subs{
+    display: flex;
+    justify-content: space-between;
+    div {
+      .main-text {
+        align-items: baseline;
+      }
+    }
+
+    .circles{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      div{
+        height: 25px;
+        width: 25px;
+        border-radius: 100px;
+        border:  1px solid white;
+        text-align: center;
+        line-height: 25px;
+        margin-left: 10px;
+        margin-bottom: 20px;
+        position: relative;
+
+        .badge{
+          position: absolute;
+          top: -3px;
+          right: -3px;
+          height: 10px;
+          width: 10px;
+          border-radius: 100%;
+          background-color: #D0101D;
+          color: white;
+          font-size: .5em;
+          text-align: center;
+          line-height: 12px;
+        }
+      }
+    }
+  }
+}
+
+.status{
+  top: 10px;
+  position: absolute;
+  right: 10px;
+  height: 10px;
+  width: 10px;
+  border-radius: 100%;
+}
+
+
+.icon{
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  i{
+    font-family: FontAwesome;
+  }
+}
+
+.failed{
+  background-color: #DF0400;
+}
+
+.pending{
+  background-color: #F66330;
+}
+
+.success{
+  background-color: #009D47;
+}

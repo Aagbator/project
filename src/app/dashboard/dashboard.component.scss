@@ -1,0 +1,55 @@
+@import "../../assets/variables";
+
+section{
+  background: $background_color;
+  padding: 0 20px;
+}
+
+.stats-overview{
+  background-color: white;
+}
+
+.container{
+  background-color: white;
+  border-radius: $container_radius;
+  padding: 40px;
+  margin-bottom: 20px;
+
+}
+.stats-overview{
+  display: flex;
+  flex-direction: row;
+  min-width: calc((100%/ 6) - 10px);
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+
+.main-display{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "sidestats chart1 chart2"
+                        "sidestats table table";
+
+  grid-gap: 20px;
+
+  .sidecards{
+    grid-area: sidestats;
+    >div{
+      margin-bottom: 20px;
+    }
+  }
+
+  .charts1{
+    grid-area: chart1;
+  }
+
+  .charts2{
+    grid-area: chart2;
+  }
+
+  .tables{
+    grid-area: table;
+  }
+}

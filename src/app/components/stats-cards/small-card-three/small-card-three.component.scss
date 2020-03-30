@@ -1,0 +1,23 @@
+@import "../../../../assets/variables";
+.card{
+  >div{
+    width: 100%;
+  }
+
+  .numbers{
+    display: flex;
+    //width: 40%;
+
+    .number{
+      width: 30px;
+      height: 30px;
+      border-radius: 100%;
+      background-color: $accent1;
+      color: rgba(white, .7);
+      text-align: center;
+      line-height: 30px;
+      margin-right: 20px;
+      margin-bottom: 30px;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+@import "../../../assets/variables";
+
+section {
+  form {
+    display: grid;
+    grid-template-columns: 25% 25% 20% 20%;
+    grid-template-areas: "input1 input2 . ." "input3 input4 button .";
+    grid-column-gap: 5%;
+    grid-row-gap: 20px;
+    align-items: end;
+    button {
+      @include goButton;
+      grid-area: button;
+      height: 35px;
+      width: 90%;
+    }
+
+    label {
+      @include label_input;
+      span{
+        margin-bottom: 5px;
+      }
+      input {
+        width: 100%;
+      }
+
+      &:first-child {
+        grid-area: input1;
+      }
+
+      &:nth-child(2) {
+        grid-area: input2;
+      }
+
+      &:nth-child(3) {
+        grid-area: input3;
+      }
+
+      &:nth-child(4) {
+        grid-area: input4;
+      }
+    }
+  }
+}

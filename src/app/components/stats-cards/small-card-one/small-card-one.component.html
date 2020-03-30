@@ -1,0 +1,23 @@
+<div class="card">
+  <div>
+    <div class="title">{{data.main.title}}</div>
+    <div class="main-text">
+      {{data.main.value}}
+      <span [class]="data.main?.textType">{{data.main.text}}</span> </div>
+  </div>
+
+  <div>
+    <div class="title">{{data.sub1.title}}</div>
+    <div class="main-text">{{data.sub1.value}} <span class="m">{{data.sub1?.text}}</span></div>
+  </div>
+
+  <div>
+    <div class="title">{{data.sub2.title}}</div>
+    <div class="main-text">{{data.sub2.value}} <span class="m">{{data.sub2?.text}}</span></div>
+  </div>
+
+  <div class="icon">
+    <i [className]="'fa fa-' + data?.icon"> </i>
+  </div>
+
+</div>

@@ -1,0 +1,70 @@
+@import "../../assets/variables";
+
+nav {
+  background-color: $primary_color;
+  color: rgba(white, .7);
+  padding: 10px 0;
+  border-bottom-left-radius: $container_radius;
+  border-bottom-right-radius: $container_radius;
+  margin-bottom: 20px;
+
+  display: flex;
+  flex-direction: row;
+
+  .logo {
+    width: 40%;
+    padding-left: 60px;
+  }
+
+  ol {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 45%;
+    li {
+      div {
+        position: relative;
+        z-index: 100;
+      }
+
+      .indicator {
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        background-color: #739445;
+        position: absolute;
+        border-radius: 100%;
+        z-index: 0;
+        font-size: .5em;
+        text-align: center;
+        line-height: 15px;
+
+        top: -5px;
+        left: -5px;
+      }
+    }
+  }
+
+  .user {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    .profile-picture{
+      width: 50px;
+      height: 50px;
+      img{
+        border-radius: 100%;
+        width: 100%;
+      }
+    }
+    .icon{
+      margin-left: 20px;
+      i{
+        font-family: FontAwesome;
+        font-size: 1.2rem;
+        line-height: 50px;
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@import "../../../assets/variables";
+
+.shell{
+  height: 10px;
+  border-radius: $container_radius;
+  background-color: rgba($bright_color, .1);
+  display: flex;
+  span{
+    display: inline-block;
+    height: 100%;
+    background-color: $bright_color;
+    border-bottom-left-radius: $container_radius;
+    border-top-left-radius: $container_radius;
+  }
+}
