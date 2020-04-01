@@ -6,6 +6,8 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { FormComponent } from './components/form/form.component';
 import {StatsCardsModule} from './components/stats-cards/stats-cards.module';
+import {ChartsModule} from './components/charts/charts.module';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import {StatsCardsModule} from './components/stats-cards/stats-cards.module';
   ],
   imports: [
     BrowserModule,
-    StatsCardsModule
+    StatsCardsModule,
+    BrowserAnimationsModule,
+    ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

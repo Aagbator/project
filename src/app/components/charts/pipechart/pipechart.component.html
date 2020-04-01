@@ -1,0 +1,13 @@
+<section class="chart">
+  <ng-template #tipContent let-greeting="greeting">{{greeting}}, <b>Something here</b>!</ng-template>
+
+  <div *ngFor="let d of data; let i = index" [ngbTooltip]="tipContent"
+       [ngStyle]="{'width': (d.value/total *100) + '%', 'backgroundColor': colors[i]}"
+       #t{{1}}="ngbTooltip" (click)="toggleWithGreeting('t' + i, d.label)" placement="bottom" ></div>
+</section>
+<section class="legend">
+  <div *ngFor="let d of data; let i = index">
+    <div class="indicator" [ngStyle]="{'backgroundColor': colors[i]}"></div>
+    <span>{{d.label}}({{d.value}})</span>
+  </div>
+</section>
